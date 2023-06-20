@@ -1,0 +1,371 @@
+@import url("fonts/stylesheet.css");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+input, button {
+    border: none
+}
+
+.container{
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 80px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px 0px 80px;
+}
+
+.topnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 64px;
+}
+
+.topnav-furniture{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.topnav-furniture-icon{
+    transform: translateY(1px);
+}
+
+.topnav a {
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: none;
+    color: white;
+}
+
+.topnav a:hover{
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #E58411;
+}
+
+.main{
+    background-image: url("assets/images/bg_image.png");
+    height: 1084px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.main-text{
+    font-size: 80px;
+    line-height: 130%;
+    letter-spacing: -0.01em;
+    text-transform: capitalize;
+    padding-bottom: 14px;
+    padding-top: 160px;
+    font-family: 'Gilroy-Bold';
+}
+
+.main-subtext{
+    font-size: 24px;
+    line-height: 160%;
+    padding-bottom: 40px;
+    opacity: 0.8;
+    max-width: 40%;
+    margin: 0 auto;
+    font-family: 'Gilroy-Regular';
+}
+
+.search-form{
+    padding: 8px 8px 8px 20px;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 0.861538px solid rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(4px);
+    border-radius: 42px;
+    width: 344px;
+    height: 56px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search{
+    background: none;
+    outline: none;
+    box-shadow: none;
+    stroke: none;
+    font-size: 18px;
+    font-family: 'Gilroy-Regular';
+    color: white;
+}
+
+.search::placeholder{
+    color: white;
+    opacity: 0.8;
+    font-size: 18px;
+    font-family: 'Gilroy-Regular';
+}
+
+
+.why{
+    display: flex;
+    flex-direction: row;
+    padding: 120px 0;
+    gap: 100px;
+    justify-content: space-between;
+}
+
+.why-caption{
+    font-family: 'Gilroy-Bold';
+    font-size: 42px;
+    line-height: 49px;
+    flex-shrink: 0;
+
+    color: #1E1E1E;
+}
+
+.advantages{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.advantages-card{
+    min-width: 200px;
+    width: calc(100% / 3 - 40px);
+}
+
+.advantages-card h3{
+    font-family: 'Gilroy-Bold';
+    font-size: 24px;
+    line-height: 28px;
+    padding-bottom: 20px;
+    color: #1E1E1E;
+
+    opacity: 0.9;
+}
+
+.advantages-card p{
+    font-family: 'Gilroy-Regular';
+    font-size: 16px;
+    line-height: 185%;
+    color: #1E1E1E;
+    padding-bottom: 14px;
+    opacity: 0.8;
+}
+
+.advantages-card-action{
+    display: flex;
+    align-items: center;
+}
+
+.advantages-card a{
+    font-family: 'Gilroy-Medium';
+    font-size: 14px;
+    line-height: 185%;
+    padding-right: 12px;
+    color: #E58411;
+    text-decoration: none;
+}
+
+.products{
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products-title{
+    font-family: 'Gilroy-Bold';
+    font-size: 42px;
+    line-height: 49px;
+    color: #1E1E1E;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 32px;
+}
+
+.tabs{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 6px;
+    background: #EEEEEE;
+    border-radius: 44px;
+    margin: 0 auto;
+    
+}
+
+.tabs-item{
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 185%;
+    color: #1E1E1E;
+    opacity: 0.8;
+    padding: 8px 20px;
+    gap: 10px;
+    border-radius: 32px;
+}
+
+.selected-tab{
+    background: white;
+}
+
+.product-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.product-page-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.products-arrow-left{
+    transform: translateX(32px);
+}
+
+.products-arrow-right{
+    transform: translateX(-32px) scale(-1, -1);
+}
+
+.products-items{
+    padding-top: 80px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.product-image-container{
+    background: #FAFAFA;
+    border-radius: 20px 20px 0px 0;
+}
+
+.product-image{
+    transform: translateY(-40px);
+}
+
+.product-info-container{
+    background: #ffffff;
+    transform: translateY(-40px);
+    padding: 12px 20px;
+    border-radius: 0 0 20px 20px;
+}
+
+
+.product-info-type{
+    font-family: 'Gilroy-Regular';
+    font-size: 16px;
+    line-height: 20px;
+    color: #8D8D8D;
+}
+
+.product-info-name{
+    font-family: 'Gilroy-Medium';
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: capitalize;
+    color: #0D1B39;
+    padding: 6px 0;
+}
+
+.product-buy-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 0 12px 0;
+}
+
+.product-price{
+    font-family: 'Gilroy-Medium';
+    font-size: 20px;
+    line-height: 26px;
+    color: #0D1B39;
+}
+
+.product-page-expand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;  
+    padding-bottom: 50px;
+}
+
+.product-page-expand p{
+    font-family: 'Gilroy-Regular';
+    font-size: 18px;
+    line-height: 185%;
+    color: #E58411;
+}
+
+.info-page{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 240px;
+}
+
+.info-page h4{
+    font-family: 'Gilroy-SemiBold';
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.175em;
+    text-transform: uppercase;
+    color: #E58411;
+    padding-bottom: 20px;
+}
+
+.info-page h2{
+    font-family: 'Gilroy-Bold';
+    font-size: 42px;
+    line-height: 49px;
+    text-transform: capitalize;
+    color: #1E1E1E;
+    padding-bottom: 20px;
+}
+
+.info-page p{
+    font-family: 'Gilroy-Regular';
+    font-size: 18px;
+    line-height: 185%;
+    color: #1E1E1E;
+    opacity: 0.8;
+    padding-bottom: 24px;
+}
+
+.info-page a{
+    font-family: 'Gilroy-Regular';
+    font-size: 14px;
+    line-height: 185%;
+    color: #E58411;
+}
+
+.info-page-text{
+    padding: 0 140px 0 80px;
+}
+
+.info-page-more{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
